@@ -1,0 +1,184 @@
+
+*{margin: 0;
+  padding: 0;}
+body{
+    background-color:#1695DA ;
+    /* margin : 0 auto; */
+    /* line-height: 20px; */
+     
+
+}
+html{scroll-behavior: smooth;}
+header{
+    
+    
+     display : flex;
+     flex-direction:column;
+     justify-content: center;
+     align-items: center;
+    
+}
+.titre-box{
+
+background-color: white;
+position: absolute; 
+z-index: 999;
+padding : 50px;
+margin :50px;
+top :180px;
+border-radius: 2px;
+box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, 0.2);
+}
+header h1{font-size: 80px;
+ text-align: center;}
+header h1,header p,li{font-family: 'kenia';
+}
+
+header p{
+    font-size:30px;
+    text-align: center;
+}
+
+/* slider */
+.slider{overflow: hidden;
+
+}
+.slides{
+
+    display: flex;
+    align-items: center;
+    animation: glisse 15s infinite ease ;
+    height: 720px;
+    width: calc(500px *4);
+    flex-direction: row;
+
+}
+.slide{opacity: 0.5;}
+@keyframes glisse{
+    0%{transform: translatex(0);}
+    10%{transform: translatex(0);}
+    33%{transform: translatex(-500px);}
+    66%{transform: translatex(-500px);}
+    100%{transform: translatex(0);}
+}
+/* menue navigation  */
+.section-menu {
+justify-content: center;
+transform: translateY(-130px);
+display: flex;
+width: 100%;
+
+}
+
+nav.menu ul {
+flex-direction: row;
+display: flex;}
+nav.menu{width: calc(500px * 4);}
+
+nav.menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    transform: 0.3s all;
+    
+
+}
+nav.menu ul li a
+{color: white;
+    font-size: 50px;
+text-decoration: none;} 
+
+nav.menu ul li:hover{
+    transform: scale(0.90) ;
+    transform: 0.3s all;
+}
+
+.nav-item {
+    padding: 50px; 
+    flex: 1;
+    height: 300px;
+    
+
+}
+
+
+.pizza{
+    background: url(../images/pizza-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.salade{
+    background: url(../images/salad-banner.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.burger{
+    background: url(../images/burger-banner.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boisson{
+    background: url(../images/boisson-banner.jpg) 100% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/* menu produit */
+
+  section
+  { 
+    font-family: 'Martel';
+    padding: 100px ;
+  }  
+ section  img
+    {
+        width: 300px;
+     }
+.info h3{font-size: 25px;}
+.info hr{margin-top: 10px;
+         margin-bottom: 10px;
+         opacity: 0.5;}
+
+ p.prix{ font-weight:bold ;
+        font-size: 22px;}
+      
+.prod:hover{transform: scale(1.1);
+           transition: 0.3s all;}
+
+ .info{padding:20px ;
+       line-height: 40px;
+      font-family: 'martel';
+   }
+ .prod:hover{box-shadow: -8px 8px 2px 1px rgba(0, 0, 0, 0.3);
+    transform: 0 -3s all;}
+ .prod{
+        cursor: pointer;
+          background-color: white;
+          text-decoration: none;
+          display: flex;
+          margin  :20px;
+          width: 50%;
+          
+        
+        }   
+         
+  
+/* pied de page */
+footer p {
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-family: 'Martel', serif;
+}
+    
+  
+  
+  
+      
+    
